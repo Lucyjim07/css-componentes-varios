@@ -1,0 +1,50 @@
+.responsiveForm__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+input.responsiveForm__input-name,
+input.responsiveForm__input-email {
+  height: 36px;
+  padding: 1em;
+  font-size: 1.2rem;
+  border: none;
+}
+input.responsiveForm__input-name::placeholder,
+input.responsiveForm__input-email::placeholder {
+  color: rgb(164, 162, 162);
+}
+
+button.responsiveForm__btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: none;
+  height: auto;
+  /* height: 100%; */
+  padding: 0 1em;
+  text-align: center;
+  background-color: rgb(83, 216, 126);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.responsiveForm__btn:hover {
+  background-color: rgb(60, 180, 98);
+}
+
+.responsiveForm__input-name {
+  flex: 1 0 140px;
+  /* flex-grow flex-shrink flex-basis */
+}
+
+.responsiveForm__input-email {
+  flex: 1 0 120px;
+}
+
+.responsiveForm__btn {
+  flex: 1 0 60px;
+}
